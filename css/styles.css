@@ -19,12 +19,14 @@ body, html{
 
  .nav-link {
 	font-size: 1.1em !important;
+	color: #333333;
 
  }
 
- .nav-link:hover{
- 	border-bottom: 1px solid black;
- 	color: black;
+ .nav-link:hover {
+ 	/*border-bottom: 1px solid b;*/
+ 	color: #333333;
+ 	font-size: 100;
  }
 
 
@@ -160,8 +162,8 @@ footer{
 	color: white;
 }
 
-#cardBlock{
-
+#cardBlock img{
+	border-radius: 15px;
 }
 
 
@@ -171,11 +173,20 @@ span.bold {
 
 .card {
 	border-radius: 15px;
+	/*border: 1px solid white;*/
 	/*background-color: #000000;*/
 }
 
-.card-img-top{
-	border-radius: 15px;
+.card img{
+	filter: brightness(0.2);
+}
+
+
+.card-img-overlay {
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	top: 20%;
 }
 
 
@@ -198,3 +209,10 @@ span.bold {
 	margin-bottom: 15px;*/
 }
 
+
+#dark{
+    width:100%;
+    height: 100%;
+    background-color: black;
+    z-index: 100;
+}
